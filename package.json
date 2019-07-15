@@ -1,10 +1,11 @@
 {
-  "name": "sample-app-2019",
+  "name": "sample-shares-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
     "classnames": "^2.2.6",
+    "d3": "^5.9.7",
     "lodash": "^4.17.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
