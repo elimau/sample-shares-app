@@ -1,6 +1,6 @@
 import * as d3 from "d3";
 
-import { BIT_COIN_DATA } from "./constants";
+import { BITCOIN_DATA } from "./constants";
 
 export const drawChart = chartContainer => {
   // drawTickerHistoryLineChart(chartContainer);
@@ -12,7 +12,7 @@ export const drawChart = chartContainer => {
 };
 
 const drawTestLineChart = chartContainer => {
-  const data = parseBitCoinData(BIT_COIN_DATA);
+  const data = parseBitcoinData(BITCOIN_DATA);
 
   const svgWidth = 600;
   const svgHeight = 400;
@@ -74,7 +74,7 @@ const drawTestLineChart = chartContainer => {
     .attr("d", line);
 };
 
-export const parseBitCoinData = data => {
+export const parseBitcoinData = data => {
   var arr = [];
   for (var i in data.bpi) {
     arr.push({

@@ -7,7 +7,7 @@ function Chart(props) {
   const { json } = props;
   const chartContainer = useRef(null);
   useEffect(() => {
-    drawChart(chartContainer);
+    // drawChart(chartContainer);
   }, []);
 
   return (
