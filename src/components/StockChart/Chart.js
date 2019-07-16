@@ -7,13 +7,13 @@ function Chart(props) {
   const { ticker, stockPricesData } = props;
   const chartContainer = useRef(null);
   useEffect(() => {
-    drawChart(chartContainer);
+    // drawChart(chartContainer);
   }, []);
 
   return (
     <Outer>
       <h3>Stock Chart for [{ticker}]</h3>
-      <ChartOuter ref={chartContainer} />
+      <ChartOuter ref={chartContainer} > <div>hello</div></ChartOuter>
     </Outer>
   );
 }
