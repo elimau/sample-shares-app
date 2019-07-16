@@ -7,12 +7,12 @@ function Chart(props) {
   const { json } = props;
   const chartContainer = useRef(null);
   useEffect(() => {
-    // drawChart(chartContainer);
+    drawChart(chartContainer);
   }, []);
 
   return (
     <Outer>
-      Chart
+      <h3>Test Charts</h3>
       <ChartOuter ref={chartContainer} />
     </Outer>
   );
